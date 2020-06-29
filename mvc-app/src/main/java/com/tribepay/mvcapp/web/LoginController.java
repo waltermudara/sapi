@@ -34,6 +34,7 @@ public class LoginController {
                                   @RequestParam String password) {
         logger.info("user returned from db {}", loginService.printUser(name));
 
+
         if (!loginService.validateUser(name, password)) {
             model.put("errorMessage", "Invalid Credentials");
             return "login";
@@ -42,6 +43,11 @@ public class LoginController {
         model.put("name", name);
         return "welcome";
     }
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    public String registerUser(){
+            return "register";
+    }
+
 
 
 }

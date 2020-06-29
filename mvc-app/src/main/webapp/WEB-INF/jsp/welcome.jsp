@@ -18,5 +18,7 @@ Welcome ${name}. You are now authenticated. Start managing users below
 
     </tr>
     </thead>
+
 </body>
+
 </html>
