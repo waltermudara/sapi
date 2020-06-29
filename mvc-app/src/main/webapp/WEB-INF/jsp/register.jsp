@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="form-group ">
-                    <a href="https://deepak646.blogspot.com/" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                    <a href="/onboard" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
                 </div>
 
             </form>

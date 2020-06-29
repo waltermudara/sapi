@@ -3,6 +3,8 @@ create table users
 (
    id integer not null,
    name varchar(255) not null,
+   username varchar(255) not null,
+   email varchar(255) not null,
    password varchar(255) not null,
    location varchar(255),
    birth_date timestamp,

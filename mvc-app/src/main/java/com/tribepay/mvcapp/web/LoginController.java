@@ -1,6 +1,7 @@
 package com.tribepay.mvcapp.web;
 
 import com.tribepay.mvcapp.service.LoginService;
+import com.tribepay.mvcapp.service.RegisterUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class LoginController {
     @Autowired
     private LoginService loginService;
+    private RegisterUser registerUser;
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -46,6 +48,15 @@ public class LoginController {
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public String registerUser(){
             return "register";
+    }
+    @RequestMapping(value="/onboard",method =RequestMethod.POST)
+    public String onBoardUser(ModelMap model, @RequestParam String name,@RequestParam String email,
+                              @RequestParam String username,@RequestParam String password ){
+
+                registerUser.registerNewUser(name,email,username,password);
+
+                return "greeting";
+
     }
 
 
