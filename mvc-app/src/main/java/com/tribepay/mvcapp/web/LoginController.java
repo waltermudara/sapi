@@ -22,6 +22,12 @@ public class LoginController {
 
         return "login";
     }
+    @RequestMapping(value = "/greeting", method= RequestMethod.GET)
+    public String showGreetings(ModelMap model){
+        model.addAttribute("message","Greetings and a warm welcome");
+        return "greeting";
+    }
+
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String handleUserLogin(ModelMap model, @RequestParam String name,

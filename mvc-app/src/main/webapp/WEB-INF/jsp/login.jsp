@@ -1,16 +1,9 @@
 <html>
 <head>
-
-    <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-
-
-    <title>Yahoo!!</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <body>
 
 <div id="login">
@@ -44,4 +37,5 @@
 </div>
 
 </body>
+
 </html>
