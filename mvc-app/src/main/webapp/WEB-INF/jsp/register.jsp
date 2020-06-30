@@ -26,7 +26,7 @@
     <div class="row main">
         <div class="main-login main-center">
             <h5>Sign up once to gain access to the application</h5>
-            <form class="" method="post" action="#">
+            <form class="" method="post" action="/onboard" modelAttribute="userForm">
 
                 <div class="form-group">
                     <label for="name" class="cols-sm-2 control-label">Your Name</label>
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="form-group ">
-                    <a href="/onboard" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                    <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                 </div>
 
             </form>
