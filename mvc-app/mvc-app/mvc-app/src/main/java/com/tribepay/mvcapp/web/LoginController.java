@@ -1,6 +1,6 @@
 package com.tribepay.mvcapp.web;
 
-import com.tribepay.mvcapp.service.LoginService;
+import com.tribepay.mvcapp.service.LoginServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

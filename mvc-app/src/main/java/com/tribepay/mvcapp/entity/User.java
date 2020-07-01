@@ -3,9 +3,11 @@ package com.tribepay.mvcapp.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-public class Users {
+//@Table(name="USER")
+public class User {
     @Id
     @GeneratedValue
     private int id;
@@ -17,10 +19,10 @@ public class Users {
     private String location;
     private String birth_date;
 
-    public Users() {
+    public User() {
     }
 
-    public Users(int id, String name, String username, String email, String password, String location, String birth_date) {
+    public User(int id, String name, String username, String email, String password, String location, String birth_date) {
         this.id = id;
         this.name = name;
         this.username = username;
@@ -29,7 +31,7 @@ public class Users {
         this.location = location;
         this.birth_date = birth_date;
     }
-    public Users( String name, String username, String email, String password) {
+    public User(String name, String username, String email, String password) {
         this.name = name;
         this.username = username;
         this.email = email;

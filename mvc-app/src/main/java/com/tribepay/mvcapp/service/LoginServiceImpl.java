@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class LoginService {
+public class LoginServiceImpl {
     @Autowired
     UserSpringDataRepository repository;
    
@@ -20,12 +20,9 @@ public class LoginService {
 
         else if (loginUser.getName().equalsIgnoreCase(name) && loginUser.getPassword().equalsIgnoreCase(password)) {
                 return true;
-            } else return false;
+            }
+        else return false;
 
-        }
-
-        public User printUser (String name){
-            return repository.findByName(name);
         }
 
 

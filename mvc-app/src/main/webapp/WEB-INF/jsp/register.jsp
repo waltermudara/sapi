@@ -4,7 +4,7 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,7 +52,7 @@
                     <label for="username" class="cols-sm-2 control-label">Username</label>
                     <div class="cols-sm-10">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                             <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
                         </div>
                     </div>

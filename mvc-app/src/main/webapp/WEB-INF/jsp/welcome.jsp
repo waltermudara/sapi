@@ -7,7 +7,7 @@
     <title>Tribepay</title>
 </head>
 <body>
-Welcome ${name}. You are now authenticated. Start managing users below
+Welcome ${name}. You are now authenticated. Start managing user below
 <table id="example" class="table table-striped table-bordered" style="width:100%">
     <thead>
     <tr>
