@@ -1,6 +1,6 @@
 package com.tribepay.mvcapp.service;
 
-import com.tribepay.mvcapp.entity.Users;
+import com.tribepay.mvcapp.entity.User;
 import com.tribepay.mvcapp.springdata.UserSpringDataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ public class LoginService {
     UserSpringDataRepository repository;
    
     public boolean validateUser(String name, String password) {
-        Users loginUser = repository.findUsersByName(name);
+        User loginUser = repository.findByName(name);
         if ((loginUser == null)) {
             return false;
         }
@@ -24,8 +24,8 @@ public class LoginService {
 
         }
 
-        public Users printUser (String name){
-            return repository.findUsersByName(name);
+        public User printUser (String name){
+            return repository.findByName(name);
         }
 
 
