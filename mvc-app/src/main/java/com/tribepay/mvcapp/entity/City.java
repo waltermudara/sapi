@@ -4,21 +4,21 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Bank {
+public class City {
+
 @Id
-  private long bankId;
+private long cityId;
 
   private String name;
   private long countryId;
-  private long branchId;
 
 
-  public long getBankId() {
-    return bankId;
+  public long getCityId() {
+    return cityId;
   }
 
-  public void setBankId(long bankId) {
-    this.bankId = bankId;
+  public void setCityId(long cityId) {
+    this.cityId = cityId;
   }
 
 
@@ -37,15 +37,6 @@ public class Bank {
 
   public void setCountryId(long countryId) {
     this.countryId = countryId;
-  }
-
-
-  public long getBranchId() {
-    return branchId;
-  }
-
-  public void setBranchId(long branchId) {
-    this.branchId = branchId;
   }
 
 }
