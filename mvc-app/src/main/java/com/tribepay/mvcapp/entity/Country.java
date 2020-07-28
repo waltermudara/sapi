@@ -6,17 +6,17 @@ import javax.persistence.Id;
 @Entity
 public class Country {
 @Id
-  private long countryId;
+  private long country_id;
 
   private String name;
 
 
-  public long getCountryId() {
-    return countryId;
+  public long getCountry_id() {
+    return country_id;
   }
 
-  public void setCountryId(long countryId) {
-    this.countryId = countryId;
+  public void setCountry_id(long countryId) {
+    this.country_id = countryId;
   }
 
 

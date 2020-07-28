@@ -7,53 +7,53 @@ import javax.persistence.Id;
 public class Business_AccountDetail {
 
   @Id
-  private long businessId;
+  private long business_id;
 
-  private String businessFullname;
-  private String accountNumber;
-  private String emailAddress;
+  private String business_fullname;
+  private String account_number;
+  private String email_address;
   private String status;
-  private long bankId;
-  private long branchId;
-  private long cityId;
-  private String addressLine;
-  private String address_Line2;
-  private String address_Line3;
+  private long bank_id;
+  private long branch_id;
+  private long city_id;
+  private String address_line;
+  private String address_line2;
+  private String address_line3;
 
 
-  public long getBusinessId() {
-    return businessId;
+  public long getBusiness_id() {
+    return business_id;
   }
 
-  public void setBusinessId(long businessId) {
-    this.businessId = businessId;
-  }
-
-
-  public String getBusinessFullname() {
-    return businessFullname;
-  }
-
-  public void setBusinessFullname(String businessFullname) {
-    this.businessFullname = businessFullname;
+  public void setBusiness_id(long businessId) {
+    this.business_id = businessId;
   }
 
 
-  public String getAccountNumber() {
-    return accountNumber;
+  public String getBusiness_fullname() {
+    return business_fullname;
   }
 
-  public void setAccountNumber(String accountNumber) {
-    this.accountNumber = accountNumber;
+  public void setBusiness_fullname(String businessFullname) {
+    this.business_fullname = businessFullname;
   }
 
 
-  public String getEmailAddress() {
-    return emailAddress;
+  public String getAccount_number() {
+    return account_number;
   }
 
-  public void setEmailAddress(String emailAddress) {
-    this.emailAddress = emailAddress;
+  public void setAccount_number(String accountNumber) {
+    this.account_number = accountNumber;
+  }
+
+
+  public String getEmail_address() {
+    return email_address;
+  }
+
+  public void setEmail_address(String emailAddress) {
+    this.email_address = emailAddress;
   }
 
 
@@ -66,57 +66,57 @@ public class Business_AccountDetail {
   }
 
 
-  public long getBankId() {
-    return bankId;
+  public long getBank_id() {
+    return bank_id;
   }
 
-  public void setBankId(long bankId) {
-    this.bankId = bankId;
-  }
-
-
-  public long getBranchId() {
-    return branchId;
-  }
-
-  public void setBranchId(long branchId) {
-    this.branchId = branchId;
+  public void setBank_id(long bankId) {
+    this.bank_id = bankId;
   }
 
 
-  public long getCityId() {
-    return cityId;
+  public long getBranch_id() {
+    return branch_id;
   }
 
-  public void setCityId(long cityId) {
-    this.cityId = cityId;
-  }
-
-
-  public String getAddressLine() {
-    return addressLine;
-  }
-
-  public void setAddressLine(String addressLine) {
-    this.addressLine = addressLine;
+  public void setBranch_id(long branchId) {
+    this.branch_id = branchId;
   }
 
 
-  public String getAddress_Line2() {
-    return address_Line2;
+  public long getCity_id() {
+    return city_id;
   }
 
-  public void setAddress_Line2(String address_Line2) {
-    this.address_Line2 = address_Line2;
+  public void setCity_id(long cityId) {
+    this.city_id = cityId;
   }
 
 
-  public String getAddress_Line3() {
-    return address_Line3;
+  public String getAddress_line() {
+    return address_line;
   }
 
-  public void setAddress_Line3(String address_Line3) {
-    this.address_Line3 = address_Line3;
+  public void setAddress_line(String addressLine) {
+    this.address_line = addressLine;
+  }
+
+
+  public String getAddress_line2() {
+    return address_line2;
+  }
+
+  public void setAddress_line2(String address_Line2) {
+    this.address_line2 = address_Line2;
+  }
+
+
+  public String getAddress_line3() {
+    return address_line3;
+  }
+
+  public void setAddress_line3(String address_Line3) {
+    this.address_line3 = address_Line3;
   }
 
 }

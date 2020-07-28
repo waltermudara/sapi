@@ -1,101 +1,119 @@
 package com.tribepay.mvcapp.entity;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 
 @Entity
+
+@Data
 public class Accounts {
 @Id
-  private long accountId;
+  private long account_id;
 
-  private long customerId;
-  private String accountName;
-  private String accountNumber;
-  private long accountType;
-  private long currencyType;
-  private long bankId;
-  private long branchId;
-  private String accountStatus;
+  private long customer_id;
+  private String account_name;
+  private String account_number;
+  private long account_type;
+  private long currency_type;
+  private long bank_id;
+  private long branch_id;
+  private String account_status;
+
+ // @ManyToOne
+ // private Customer customer;
+
+ // @ManyToOne
+ // private AccountTypes accountType;
+
+ // @ManyToOne
+ // private Bank bank;
+
+  //@ManyToOne
+ // private Branch branch;
 
 
-  public long getAccountId() {
-    return accountId;
+  public long getAccount_id() {
+    return account_id;
   }
 
-  public void setAccountId(long accountId) {
-    this.accountId = accountId;
-  }
-
-
-  public long getCustomerId() {
-    return customerId;
-  }
-
-  public void setCustomerId(long customerId) {
-    this.customerId = customerId;
-  }
-
-
-  public String getAccountName() {
-    return accountName;
-  }
-
-  public void setAccountName(String accountName) {
-    this.accountName = accountName;
+  public void setAccount_id(long accountId) {
+    this.account_id = accountId;
   }
 
 
-  public String getAccountNumber() {
-    return accountNumber;
+  public long getCustomer_id() {
+    return customer_id;
   }
 
-  public void setAccountNumber(String accountNumber) {
-    this.accountNumber = accountNumber;
-  }
-
-
-  public long getAccountType() {
-    return accountType;
-  }
-
-  public void setAccountType(long accountType) {
-    this.accountType = accountType;
+  public void setCustomer_id(long customerId) {
+    this.customer_id = customerId;
   }
 
 
-  public long getCurrencyType() {
-    return currencyType;
+  public String getAccount_name() {
+    return account_name;
   }
 
-  public void setCurrencyType(long currencyType) {
-    this.currencyType = currencyType;
-  }
-
-
-  public long getBankId() {
-    return bankId;
-  }
-
-  public void setBankId(long bankId) {
-    this.bankId = bankId;
+  public void setAccount_name(String accountName) {
+    this.account_name = accountName;
   }
 
 
-  public long getBranchId() {
-    return branchId;
+  public String getAccount_number() {
+    return account_number;
   }
 
-  public void setBranchId(long branchId) {
-    this.branchId = branchId;
+  public void setAccount_number(String accountNumber) {
+    this.account_number = accountNumber;
   }
 
 
-  public String getAccountStatus() {
-    return accountStatus;
+  public long getAccount_type() {
+    return account_type;
   }
 
-  public void setAccountStatus(String accountStatus) {
-    this.accountStatus = accountStatus;
+  public void setAccount_type(long accountType) {
+    this.account_type = accountType;
+  }
+
+
+  public long getCurrency_type() {
+    return currency_type;
+  }
+
+  public void setCurrency_type(long currencyType) {
+    this.currency_type = currencyType;
+  }
+
+
+  public long getBank_id() {
+    return bank_id;
+  }
+
+  public void setBank_id(long bankId) {
+    this.bank_id = bankId;
+  }
+
+
+  public long getBranch_id() {
+    return branch_id;
+  }
+
+  public void setBranch_id(long branchId) {
+    this.branch_id = branchId;
+  }
+
+
+  public String getAccount_status() {
+    return account_status;
+  }
+
+  public void setAccount_status(String accountStatus) {
+    this.account_status = accountStatus;
   }
 
 }

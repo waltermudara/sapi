@@ -6,26 +6,26 @@ import javax.persistence.Id;
 @Entity
 public class AccountTypes {
  @Id
-  private long accountTypeId;
+  private long account_type_id;
 
-  private String accountTypeName;
+  private String account_type_name;
 
 
-  public long getAccountTypeId() {
-    return accountTypeId;
+  public long getAccount_type_id() {
+    return account_type_id;
   }
 
-  public void setAccountTypeId(long accountTypeId) {
-    this.accountTypeId = accountTypeId;
+  public void setAccount_type_id(long accountTypeId) {
+    this.account_type_id = accountTypeId;
   }
 
 
-  public String getAccountTypeName() {
-    return accountTypeName;
+  public String getAccount_type_name() {
+    return account_type_name;
   }
 
-  public void setAccountTypeName(String accountTypeName) {
-    this.accountTypeName = accountTypeName;
+  public void setAccount_type_name(String accountTypeName) {
+    this.account_type_name = accountTypeName;
   }
 
 }

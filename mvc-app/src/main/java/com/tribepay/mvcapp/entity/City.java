@@ -7,18 +7,18 @@ import javax.persistence.Id;
 public class City {
 
 @Id
-private long cityId;
+private long city_id;
 
   private String name;
-  private long countryId;
+  private long country_id;
 
 
-  public long getCityId() {
-    return cityId;
+  public long getCity_id() {
+    return city_id;
   }
 
-  public void setCityId(long cityId) {
-    this.cityId = cityId;
+  public void setCity_id(long cityId) {
+    this.city_id = cityId;
   }
 
 
@@ -31,12 +31,12 @@ private long cityId;
   }
 
 
-  public long getCountryId() {
-    return countryId;
+  public long getCountry_id() {
+    return country_id;
   }
 
-  public void setCountryId(long countryId) {
-    this.countryId = countryId;
+  public void setCountry_id(long countryId) {
+    this.country_id = countryId;
   }
 
 }

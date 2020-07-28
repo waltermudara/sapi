@@ -6,16 +6,16 @@ import javax.persistence.Id;
 @Entity
 public class Occupation {
 @Id
-  private long occupationId;
+  private long occupation_id;
   private String name;
 
 
-  public long getOccupationId() {
-    return occupationId;
+  public long getOccupation_id() {
+    return occupation_id;
   }
 
-  public void setOccupationId(long occupationId) {
-    this.occupationId = occupationId;
+  public void setOccupation_id(long occupationId) {
+    this.occupation_id = occupationId;
   }
 
 

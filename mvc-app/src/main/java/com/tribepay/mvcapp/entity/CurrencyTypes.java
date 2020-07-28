@@ -6,25 +6,25 @@ import javax.persistence.Id;
 @Entity
 public class CurrencyTypes {
 @Id
-  private long currencyTypeId;
-  private String currencyTypeName;
+  private long currency_type_id;
+  private String currency_type_name;
 
 
-  public long getCurrencyTypeId() {
-    return currencyTypeId;
+  public long getCurrency_type_id() {
+    return currency_type_id;
   }
 
-  public void setCurrencyTypeId(long currencyTypeId) {
-    this.currencyTypeId = currencyTypeId;
+  public void setCurrency_type_id(long currencyTypeId) {
+    this.currency_type_id = currencyTypeId;
   }
 
 
-  public String getCurrencyTypeName() {
-    return currencyTypeName;
+  public String getCurrency_type_name() {
+    return currency_type_name;
   }
 
-  public void setCurrencyTypeName(String currencyTypeName) {
-    this.currencyTypeName = currencyTypeName;
+  public void setCurrency_type_name(String currencyTypeName) {
+    this.currency_type_name = currencyTypeName;
   }
 
 }

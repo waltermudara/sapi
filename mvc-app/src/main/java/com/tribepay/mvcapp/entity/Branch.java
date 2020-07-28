@@ -7,18 +7,18 @@ import javax.persistence.Id;
 public class Branch {
 
   @Id
-  private long branchId;
+  private long branch_id;
 
   private String name;
-  private long cityId;
+  private long city_id;
 
 
-  public long getBranchId() {
-    return branchId;
+  public long getBranch_id() {
+    return branch_id;
   }
 
-  public void setBranchId(long branchId) {
-    this.branchId = branchId;
+  public void setBranch_id(long branchId) {
+    this.branch_id = branchId;
   }
 
 
@@ -31,12 +31,12 @@ public class Branch {
   }
 
 
-  public long getCityId() {
-    return cityId;
+  public long getCity_id() {
+    return city_id;
   }
 
-  public void setCityId(long cityId) {
-    this.cityId = cityId;
+  public void setCity_id(long cityId) {
+    this.city_id = cityId;
   }
 
 }
